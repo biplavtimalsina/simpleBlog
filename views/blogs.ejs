@@ -1,0 +1,14 @@
+<% include partials/header.ejs %>
+
+<h1> All Blogs</h1>
+<p> Read On</p>
+
+<ul>
+<% blogPosts.forEach(function(blog){ %>
+    <li><%=blog.name %> - <%= blog.description %></li>        
+<% }); %>
+</ul>
+
+<a href="/new">Add New BLog</a>
+
+<% include partials/footer.ejs %>
